@@ -1,0 +1,7 @@
+.custom_input .ant-input {
+  border: 9px solid black !important; /* Custom border */
+  height: 60px !important; /* Set the height */
+  padding: 8px 16px !important; /* Adjust padding */
+  line-height: 1.5 !important; /* Adjust line height */
+  border-radius: 8px !important; /* Set border radius */
+}

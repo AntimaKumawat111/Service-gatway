@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* font-size: 62.5%; */
+  scroll-behavior: smooth;
+}
+
+body {
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+  width: 100vw;
+  height: auto;
+  overflow-y: scroll;
+  position: relative;
+}
+
+/* Add styles specifically to the input field */
+.custom-search .ant-input {
+  padding: 15px;
+  height: 40px; /* Sets height for the input field */
+  border: 1px solid black;
+  border-radius: 50px; /* Rounds input corners */
+}
+
+/* Add styles to the search button */
+.custom-search .ant-btn {
+  padding: 0 20px; /* Adds padding inside the button */
+  height: 40px; /* Matches the input box height */
+  border-radius: 20px; /* Rounds button corners */
+}
+
+/* Placeholder text color (if needed) */
+.custom-search .ant-input::placeholder {
+  color: black;
+  opacity: 0.5;
+  font-size: 14px;
+}

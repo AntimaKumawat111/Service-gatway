@@ -1,0 +1,61 @@
+
+.languageDropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownBtn {
+  background: transparent;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  color: black;
+  text-align: left;
+}
+
+.dropdownContent a {
+  color: black;
+  padding: 10px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.languageDropdown:hover .dropdownContent {
+  display: block;
+}
+
+@media screen and (max-width: 1200px) {
+  nav {
+    display: none;
+  }
+
+  nav2{
+    display: none;
+  }
+}
+
+
+/* @media screen and (max-width: 1200px) {
+
+  nav2{
+    display: none;
+  }
+} */
+
+/* Hides menu_button on larger screens */
+@media screen and (min-width: 1101px) {
+  .menu_button {
+    display: none !important;
+  }
+}
