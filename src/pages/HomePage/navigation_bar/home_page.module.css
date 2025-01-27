@@ -5,17 +5,15 @@
   overflow-y: scroll;
   overflow-x: hidden;
   position: relative;
-  /* display: flex; */
 }
 
 .carousel_container{
-
   border:2px solid red;
   overflow-x: hidden;
   width: auto;
   height: 100vh;
-  position: relative;
   position: absolute;
+  z-index: 0;
   
 }
 .carousel_track{
@@ -25,11 +23,11 @@
 }
 
 .carousel_image{
+  position: absolute;
   width: auto;
   height: 100vh;
   object-fit: cover;
   z-index: 0;
-  /* opacity: 0.8 */
   filter: brightness(40%);
 }
 

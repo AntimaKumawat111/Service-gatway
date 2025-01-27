@@ -31,12 +31,14 @@ import "./App.css";
 // import MenuBtnPage from "./pages/menu_touch_page";
 // import HomePage from "./pages/Home_Page_data/home_page";
 import HomePage from "./pages/HomePage/navigation_bar/home_page";
+// import MainFile from "./pages/HomePage/navigation_bar/Second-Window/Main_file";
+
 
 function App() {
   return (
     <>
       <HomePage />
-
+      {/* <MainFile /> */}
       {/* <MenuBtnPage /> */}
     </>
   );
