@@ -1,9 +1,12 @@
-// transfered
 
 import React from "react";
-import homePageCss from "./home_page.module.css"; // Importing CSS module correctly
+
+// local module
 import Home from "./Home";
-import MainFile from "./Second-Window/Main_file";
+import homePageCss from "./home_page.module.css"; // Importing CSS module correctly
+import MainFile from "../../HomePage/Second-Window/Main_file";
+
+
 function HomePage() {
   return (
     <>
@@ -39,45 +42,3 @@ function HomePage() {
 }
 
 export default HomePage;
-
-// import React from "react";
-// import homePageCss from "./home_page.module.css"; // Importing CSS module correctly
-// import Home from "./Home";
-// import MainFile from "./Second-Window/Main_file";
-
-// function HomePage() {
-//   return (
-//     <>
-//       <div className="main_container">
-//         {/* Carousel */}
-//         <div className={homePageCss.carousel_container}>
-//           <div className={homePageCss.carousel_track}>
-//             <img
-//               className={homePageCss.carousel_image}
-//               src="https://probid-nextjs.vercel.app/assets/img/home5/home5-banner-img3.jpg"
-//               alt="image1"
-//             />
-//             <img
-//               className={homePageCss.carousel_image}
-//               src="https://probid-nextjs.vercel.app/assets/img/home5/home5-banner-img1.jpg"
-//               alt="image2"
-//             />
-//             <img
-//               className={homePageCss.carousel_image}
-//               src="https://probid-nextjs.vercel.app/assets/img/home5/home5-banner-img2.jpg"
-//               alt="image3"
-//             />
-//           </div>
-//         </div>
-
-//         {/* Home Component */}
-//         <Home />
-
-//         {/* MainFile */}
-//         <MainFile />
-//       </div>
-//     </>
-//   );
-// }
-
-// export default HomePage;

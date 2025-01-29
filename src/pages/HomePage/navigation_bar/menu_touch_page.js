@@ -1,5 +1,4 @@
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react"; // make sure both are imported
 import AddIcon from "@mui/icons-material/Add";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
@@ -32,24 +31,24 @@ export default function MenuBtnPage() {
         <div className="flex items-end justify-end text-2xl">
           <button
             onClick={handleToggle}
-            className="relative flex flex-col justify-between w-10 h-10 p-2  rounded-md"
+            className="relative flex flex-col justify-between w-10 h-10 p-2 rounded-md"
             aria-label="Menu Button"
           >
             {/* Top Line */}
             <div
-              className={`h-1 w-full bg-black transition-transform duration-300 ${
+              className={`h-1 w-full bg-white transition-transform duration-300 ${
                 isOpen ? "rotate-45 translate-y-2" : ""
               }`}
             ></div>
             {/* Middle Line */}
             <div
-              className={`h-1 w-full bg-black transition-opacity duration-300 ${
+              className={`h-1 w-full bg-white transition-opacity duration-300 ${
                 isOpen ? "opacity-0" : ""
               }`}
             ></div>
             {/* Bottom Line */}
             <div
-              className={`h-1 w-full bg-black transition-transform duration-300 ${
+              className={`h-1 w-full bg-white transition-transform duration-300 ${
                 isOpen ? "-rotate-45 -translate-y-3" : ""
               }`}
             ></div>
@@ -63,16 +62,15 @@ export default function MenuBtnPage() {
           }`}
           style={{ width: "300px" }}
         >
-          {/* list with anche tage */}
-
-          <div className="bg-gray-300 min-h-screen flex flex-col items-center  p-4">
+          {/* list with anchor tags */}
+          <div className="bg-gray-300 min-h-[100vh]  flex flex-col items-center p-4 ">
             <div className="flex items-center space-x-3 mb-6">
               <h1 className="text-2xl font-bold text-gray-800">MyWebsite</h1>
             </div>
 
             {/* List with Anchor Tags */}
             <ul className=" space-y-5 mt-5  w-full">
-              <li className="  flex justify-between">
+              <li className=" flex justify-between">
                 <a
                   href="https://probid-nextjs.vercel.app/"
                   className="text-lg text-black font-semibold hover:underline hover:text-blue-800"
@@ -119,7 +117,7 @@ export default function MenuBtnPage() {
 
               <div className=" flex flex-col gap-5  ">
                 <li className="mt-5 truncate break-words">
-                  <div className="flex gap-2 text-lg  font-semibold text-black tracking-wide ">
+                  <div className="flex gap-2 text-lg font-semibold text-black tracking-wide ">
                     <EmailOutlinedIcon />
                     <p>info@example.com</p>
                   </div>
@@ -133,7 +131,7 @@ export default function MenuBtnPage() {
               </div>
 
               <div className="flex gap-9">
-              <InputCheckforMenu/>
+                <InputCheckforMenu />
               </div>
             </ul>
           </div>

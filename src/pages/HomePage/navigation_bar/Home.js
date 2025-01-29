@@ -7,14 +7,18 @@ import {
   PagesDropDown,
   Contact,
 } from "./dropdown_list";
-import Input_Box from "./Input_Box";
-import MenuBtnPage from "./menu_touch_page";
+
+// ui icons
 import EmailIcon from "@mui/icons-material/Email";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 import TranslateSharpIcon from "@mui/icons-material/TranslateSharp";
 
 // local modules
-import Main from "./Middle_home_data/Main";
+import Input_Box from "./Input_Box";
+import MenuBtnPage from "./menu_touch_page";
+// import Main from "../Middle_home_data copy/Main";
+import Main from "../Middle_home_data/Main";
+
 
 function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -83,7 +87,7 @@ function Home() {
           </div>
         </nav>
 
-        <nav2>
+        <div>
           <div className="hidden lg:flex pt-3 pb-3 items-center justify-around w-full border border-white border-opacity-50">
             <div className=" w-auto">
               <div className="flex items-center ">
@@ -104,7 +108,7 @@ function Home() {
               <Input_Box />
             </div>
           </div>
-        </nav2>
+        </div>
 
         {showMenuButton && <MenuBtnPage />}
 
