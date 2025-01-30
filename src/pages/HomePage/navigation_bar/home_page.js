@@ -5,6 +5,7 @@ import React from "react";
 import Home from "./Home";
 import homePageCss from "./home_page.module.css"; // Importing CSS module correctly
 import MainFile from "../../HomePage/Second-Window/Main_file";
+import Main from "../Third-Window/Main";
 
 
 function HomePage() {
@@ -35,6 +36,7 @@ function HomePage() {
           </div>
           <Home />
           <MainFile />
+          <Main />
         </div>
       </div>
     </>

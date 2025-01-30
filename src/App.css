@@ -38,7 +38,6 @@ body {
   font-size: 14px;
 }
 
-
 @media (max-width: 650px) {
   .custom-top-margin {
     margin-top: 60% !important;
@@ -59,7 +58,6 @@ body {
 .show {
   animation: fadeIn 3s ease-in-out forwards;
 }
-
 
 /* Carousel container */
 .carousel-container {
@@ -89,7 +87,6 @@ body {
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  /* padding: 0%; */
   margin: auto;
   overflow: hidden; /* Ensure no image overflow */
 }
@@ -107,12 +104,12 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;}
+
+}
 
 /* Card image */
 .card-img {
   width: 100%;
-  height: 30px;
   border-radius: 10px;
   object-fit: cover;
 }
@@ -120,18 +117,8 @@ body {
 /* Card body for name, price, and button */
 .card-body {
   text-align: center;
-  /* margin-top: 5px; */
 }
 
-/* Card title */
-.card h3 {
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
-  text-align: center;
-}
-
-/* Price styling */
 .price {
   font-size: 16px;
   color: #27ae60;
@@ -166,29 +153,121 @@ body {
   min-width: 8rem;
 }
 
-@media only screen and (max-width: 1500px) {
+.slick-prev,
+.slick-next {
+  top: -6rem !important; /* Arrows को ऊपर सेट करें */
+  right: 1rem !important; /* Right side में लाएं */
+  left: auto !important; /* Default left position हटाएं */
+  z-index: 2;
+}
+
+.slick-prev {
+  margin-right: 2.5rem; /* Left arrow को थोड़ा left side में रखें */
+}
+
+.slick-prev::before,
+.slick-next::before {
+  font-size: 40px !important; /* Arrow size बढ़ाएं */
+  color: grey !important; /* Arrow का color बदलें */
+  background-color: transparent;
+}
+
+.timeData {
+  width: auto;
+}
+
+@media only screen and (max-width:600px){
+  .findFromTopBar{
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width:350px){
+  .findFromTopBar{
+   
+    font-size: 2rem;
+    line-height: 1.7rem;
+  }
+}
+
+
+/* @media only screen and (max-width: 950px) {
+  .timeData {
+    top: 10rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    border: 4px solid black;
+    width: 80vw;
+  }
+  .card-img {
+    border: 4px solid black;
+    height: 300px;
+    width: 80vw;
+  }
+
+  .timeData {
+    top: 15rem;
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .slider-content{
+    border: 3px solid green;
+    width: 90vw;
+  }
+  .card {
+    border: 4px solid black;
+    width: 100vw;
+    padding: 0%;
+  }
+  .card-img {
+    border: 4px solid black;
+    height: 300px;
+    width: 90vw;
+  }
+
+  .timeData  {
+    font-size: x-small;
+    padding: 0.5rem;
+    padding-left:1.2rem;
+    padding-right: 1.2rem;
+  }
+  .timeData h6 {
+    font-size: x-small;
+  }
+} */
+
+
+/* @media only screen and (max-width: 1500px) {
   .timeData {
     border: 3px solid green;
     max-width: 14rem;
   }
-}
+} */
 
-@media only screen and (max-width: 1200px) {
+/* @media only screen and (max-width: 1200px) {
   .timeData {
     max-width: 12rem;
   }
-}
-@media only screen and (max-width: 1000px) {
+} */
+
+/* @media only screen and (max-width: 1000px) {
   .timeData {
     max-width: 13rem;
   }
-}
+} */
 
 /* Media query for min-width: 600px */
-@media only screen and (max-width: 770px) {
+/* @media only screen and (max-width: 770px) {
   .timeData {
     width: 80vw;
-    max-width: 90vh; /* Ensure it takes 80% of viewport height */
+    max-width: 90vh;
     min-width: 8rem;
   }
 
@@ -198,9 +277,9 @@ body {
     justify-content: center;
     align-items: center;
   }
-}
+} */
 
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 600px) {
   .card {
     width: 100%;
   }
@@ -242,9 +321,9 @@ body {
   .price {
     font-size: 1rem;
   }
-}
+} */
 
-@media only screen and (min-width: 350px) and (max-width: 600px) {
+/* @media only screen and (min-width: 350px) and (max-width: 600px) {
   .carousel-container {
     margin-top: 1rem;
     width: 90vw;
@@ -300,4 +379,63 @@ body {
   .price {
     font-size: 1rem;
   }
-}
+} */
+
+/* @media only screen and (max-width: 350px) {
+  
+  .carousel-container {
+    border: 3px solid black;
+    margin-top: 1rem;
+    width: 100vw;
+    padding: 1rem;
+  }
+
+  .card {
+    border: 3px solid brown;
+    height: 25rem;
+  }
+
+  .card-img {
+    height: 300px;
+  }
+
+  .timeData {
+    border: 1px solid black;
+    width: 70vw;
+    min-width: 10vw;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    top: 10rem;
+  }
+
+  .slider-content {
+    width: 100%;
+    height: auto;
+  }
+
+  .slider-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  .card-body {
+    text-align: center;
+    margin-top: 1rem;
+    padding: 10px;
+  }
+
+  .card-btn {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+  .card-body h3 {
+    font-size: 1.2rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+
+} */
