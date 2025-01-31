@@ -6,6 +6,7 @@ import Home from "./Home";
 import homePageCss from "./home_page.module.css"; // Importing CSS module correctly
 import MainFile from "../../HomePage/Second-Window/Main_file";
 import Main from "../Third-Window/Main";
+import MainFilefrom4thwindow from "../Fourth-Window/Main";
 
 
 function HomePage() {
@@ -37,6 +38,7 @@ function HomePage() {
           <Home />
           <MainFile />
           <Main />
+          <MainFilefrom4thwindow/>
         </div>
       </div>
     </>
