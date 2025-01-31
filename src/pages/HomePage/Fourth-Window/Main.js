@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 // local modules
 import TopBar from "./topbar";
 import ActiveCards from "./ActiveCardFor-smallerScreen.js/Active_Card";
 import ActiveCard2nd from "./ActiveCardFor_largerScreen.js/Active_Card2nd";
 
-function MainFilefrom4thwindow() {
+function Mainfrom4thwindow() {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 1024);
 
   useEffect(() => {
@@ -18,11 +19,26 @@ function MainFilefrom4thwindow() {
   }, []);
 
   return (
-    <div className="relative bg-white w-[90vw] m-auto  min-h-screen flex flex-col  rounded-t-3xl custom-top-margin">
-      <TopBar />
-      {isSmallScreen ? <ActiveCards /> : <ActiveCard2nd />}
+    <div className="relative bg-white w-[90vw] m-auto min-h-screen flex flex-col rounded-t-3xl custom-top-margin">
+      {/* TopBar Animation */}
+      <motion.div
+        initial={{ opacity: 0, y: "-100%" }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
+        <TopBar />
+      </motion.div>
+
+      {/* Active Cards or ActiveCard2nd Animation */}
+      <motion.div
+        initial={{ opacity: 0, y: "100%" }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
+        {isSmallScreen ? <ActiveCards /> : <ActiveCard2nd />}
+      </motion.div>
     </div>
   );
 }
 
-export default MainFilefrom4thwindow;
+export default Mainfrom4thwindow;

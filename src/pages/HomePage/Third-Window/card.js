@@ -102,7 +102,6 @@ export default function ActionAreaCard({ url, name }) {
                 color: "text.secondary",
                 marginTop: "0.5rem",
                 marginBottom:'2rem', // Increased margin to create space between text and arrow
-                textAlign: "start",
                 width: "100%",
                 textAlign:'center',
               }}
