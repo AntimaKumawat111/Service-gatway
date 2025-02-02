@@ -7,11 +7,11 @@ import ActiveCards from "./ActiveCardFor-smallerScreen.js/Active_Card";
 import ActiveCard2nd from "./ActiveCardFor_largerScreen.js/Active_Card2nd";
 
 function Mainfrom4thwindow() {
-  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 1024);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 900);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth < 1024);
+      setIsSmallScreen(window.innerWidth < 900);
     };
 
     window.addEventListener("resize", handleResize);

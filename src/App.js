@@ -19,7 +19,8 @@
 //           <Route path="/registration" element={<Registration />} />
 //           <Route path="/payment" element={<Payment />} />
 //         </Routes>
-//         <Footer />
+//         {/* <Footer /> */}
+        
 //       </Router>
 //     </>
 //   );
@@ -27,15 +28,45 @@
 
 // export default App;
 
+
+
+// import React from "react";
+// import { BrowserRouter as Router } from "react-router-dom";
+// import "./App.css";
+// import MainOfAll from "./Main_of_All";
+
+// function App() {
+//   return (
+//     <Router>  {/* ✅ सिर्फ यहीं <Router> रहेगा */}
+//       <MainOfAll />
+//     </Router>
+//   );
+// }
+
+// export default App;
+
+
+// -------------------------
+
+
 import React from "react";
-import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+// import Courses from "./Components/Service";
+// import Payment from "./Components/Payment";
+// import MainOfAll from "./MainOfAll";
 import MainOfAll from "./Main_of_All";
+import Courses from "./components/Courses"
+import Payment from "./components/Payment";
 
 function App() {
   return (
-    <>
-      <MainOfAll/>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainOfAll />} />
+        <Route path="/course" element={<Courses />} />
+        <Route path="/payment" element={<Payment />} />
+      </Routes>
+    </Router>
   );
 }
 

@@ -9,9 +9,9 @@ import RemoveRedEyeOutlinedIcon from "@mui/icons-material/RemoveRedEyeOutlined";
 
 function MovingCards({ url, name }) {
   return (
-<div className="p-2 flex justify-center items-center">
-<Card
-        className="group transition-transform duration-300 ease-in-out hover:scale-100 relative"
+    <div className="p-2 flex justify-center items-center">
+      <Card
+        className=" group transition-transform duration-300 ease-in-out hover:scale-100 relative"
         sx={{
           maxWidth: 345,
           minHeight: 300,
@@ -19,6 +19,12 @@ function MovingCards({ url, name }) {
           flexDirection: "column",
           justifyContent: "space-between",
           position: "relative",
+          "@media (max-width:550px)": {
+                maxWidth:450,
+                minHeight:150,
+                // padding: "0",
+                // paddingTop: "1rem",
+              },
         }}
       >
         <CardActionArea>
@@ -53,11 +59,9 @@ function MovingCards({ url, name }) {
               padding: "1rem",
               marginTop: "1rem",
               "@media (max-width:300px)": {
-               border:'3px solid yellow',
-               padding:'0',
-               paddingTop:'1rem',
-
-               },
+                padding: "0",
+                paddingTop: "1rem",
+              },
             }}
           >
             <Typography
@@ -67,7 +71,7 @@ function MovingCards({ url, name }) {
               className="text-sm md:text-lg w-full text-start font-bold text-gray-800"
               sx={{
                 "@media (max-width:1200px)": {
-                  width:'100%',
+                  width: "100%",
                   fontSize: "1.2rem",
                 },
                 "@media (max-width:900px)": {
@@ -77,8 +81,8 @@ function MovingCards({ url, name }) {
                   fontSize: "1rem",
                 },
                 "@media (max-width:300px)": {
-                 fontSize:'0.8rem',
-                 letterSpacing:'0.5px'
+                  fontSize: "0.8rem",
+                  letterSpacing: "0.5px",
                 },
               }}
             >
@@ -86,19 +90,19 @@ function MovingCards({ url, name }) {
             </Typography>
 
             <div className="w-full flex flex-row justify-between items-center mt-2">
-  {/* Price Section */}
-  <div className="w-auto flex flex-col">
-    <p className="text-xs sm:text-sm text-gray-500">Current Bid</p>
-    <h3 className="text-sm sm:text-lg font-semibold text-gray-800">
-      $price
-    </h3>
-  </div>
+              {/* Price Section */}
+              <div className="w-auto flex flex-col">
+                <p className="text-xs sm:text-sm text-gray-500">Current Bid</p>
+                <h3 className="text-sm sm:text-lg font-semibold text-gray-800">
+                  $price
+                </h3>
+              </div>
 
-  {/* Buy Now Button */}
-  <div className="rounded-lg px-2 py-1 bg-blue-500 hover:bg-green-500 text-white cursor-pointer">
-    Buy Now
-  </div>
-</div>
+              {/* Buy Now Button */}
+              <div className="rounded-lg px-2 py-1 bg-blue-500 hover:bg-blue-700 text-white cursor-pointer">
+                Buy Now
+              </div>
+            </div>
           </CardContent>
 
           {/* Time CardContent */}
@@ -110,7 +114,6 @@ function MovingCards({ url, name }) {
               flexDirection: "row",
               alignItems: "center",
               justifyContent: "center",
-              border: "2px solid black",
               padding: "1rem",
               position: "absolute",
               top: "42%",

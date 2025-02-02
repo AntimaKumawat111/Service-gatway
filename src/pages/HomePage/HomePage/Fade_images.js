@@ -17,7 +17,7 @@ function Fade() {
   };
 
   return (
-    <div className="slider-container border-4 border-green-500 min-h-[90vh]">
+    <div className=" min-w-[100vw] min-h-[90vh] w-full">
       <Slider {...settings}>
         <div>
           <img

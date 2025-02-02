@@ -7,21 +7,26 @@ import CardActionArea from "@mui/material/CardActionArea";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import RemoveRedEyeOutlinedIcon from "@mui/icons-material/RemoveRedEyeOutlined";
 
+// LOCAL MODULES
+import "../../../../App.css";
+
 function VaricalCard({ url, name }) {
   return (
-    <div className=" p-2 flex justify-center items-center sm:w-1/2 lg:fle  ">
+    <div className=" p-1 sm:p-1 flex sm:flex-wrap justify-evenly items-center  ">
       <Card
         className="group transition-transform duration-300 ease-in-out hover:scale-100 relative"
         sx={{
-          maxWidth: 345,
+          maxWidth: 250,
           minHeight: 300,
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
           position: "relative",
-          "@media (min-width:640px)": {
-            maxWidth: 400,
-            justifyContent: "space-around",
+          "@media (max-width:500px)": {
+            maxWidth: "100%", // Full width on smaller screens
+          },
+          "@media (min-width:501px)": {
+            maxWidth: "40vw", // Half of 90vw for larger screens
           },
         }}
       >
@@ -35,6 +40,10 @@ function VaricalCard({ url, name }) {
             className=" h-54 object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
             sx={{
               position: "relative", // To position icons within this container
+
+              // "@media(max-width:300px":{
+              //   maxWidth:'100%'
+              // }
             }}
           />
 
@@ -55,101 +64,85 @@ function VaricalCard({ url, name }) {
               alignItems: "center",
               justifyContent: "center",
               padding: "1rem",
-              marginTop: "1rem",
+              // marginTop: "1rem",
               "@media (max-width:300px)": {
                 padding: "0",
                 paddingTop: "1rem",
+              },
+              // "@media (max-width:500px)": {
+              //   padding: "0",
+              //   marginTop: "0",
+              // },
+              "@media (min-width:400px)": {
+                padding: "0",
+                paddingTop: "0",
+                margin: "0",
               },
             }}
           >
             <Typography
               gutterBottom
-              variant="h5"
+              variant="div"
               component="div"
-              className="text-sm md:text-lg w-full text-start font-bold text-gray-800"
+              className="text-lg sm:text-xl md:text-lg w-full text-start font-bold text-gray-800"
               sx={{
-                "@media (max-width:1200px)": {
-                  width: "100%",
-                  fontSize: "1.2rem",
-                },
-                "@media (max-width:900px)": {
-                  fontSize: "1.2rem",
-                },
-                "@media (max-width:700px)": {
+                "@media (max-width:300px)": {
                   fontSize: "1rem",
                 },
-                "@media (max-width:300px)": {
-                  fontSize: "0.8rem",
-                  letterSpacing: "0.5px",
+                "@media (max-width:500px)": {
+                  fontSize: "1.3rem",
+                  font: "bold",
+                  letterSpacing: "0.4px",
+                  lineHeight: "1.6rem",
+                },
+                "@media (max-width:600px)": {
+                  fontSize: "1.2rem",
+                  letterSpacing: "0",
+                  lineHeight: "1.6rem",
                 },
               }}
             >
               {name}
             </Typography>
 
-            <div className="w-full flex flex-row justify-between items-center mt-2">
+            <div className="pragraphBoxFourthWindow w-full flex flex-row justify-between items-center mt-2 ">
               {/* Price Section */}
               <div className="w-auto flex flex-col">
-                <p className="text-xs sm:text-sm text-gray-500">Current Bid</p>
-                <h3 className="text-sm sm:text-lg font-semibold text-gray-800">
+                <p className="text-lg sm:text-sm text-gray-500">Current Bid</p>
+                <h3 className="text-lg sm:text-lg font-semibold text-gray-800">
                   $price
                 </h3>
               </div>
 
               {/* Buy Now Button */}
-              <div className="rounded-lg px-2 py-1 bg-blue-500 hover:bg-green-500 text-white cursor-pointer">
+              <div className="rounded-lg px-2 py-1 bg-blue-500 hover:bg-blue-700 text-white cursor-pointer">
                 Buy Now
               </div>
             </div>
           </CardContent>
 
-          {/* Time CardContent */}
-          <CardContent
-            className="group-hover:opacity-0 group-hover:invisible transition-opacity duration-300 ease-in-out"
-            sx={{
-              height: "3.5rem",
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-              justifyContent: "center",
-              border: "1px solid black",
-              padding: "1rem",
-              position: "absolute",
-              top: "42%",
-              transform: "translate(-50%, -50%)",
-              left: "50%",
-              width: "90%",
-              backgroundColor: "white",
-              gap: "1rem",
-              borderRadius: "2rem",
-              "@media (max-width:900px)": {
-                top: "50%", // 990px ya usse kam ke liye chhota size
-              },
-              "@media (max-width:700px)": {
-                top: "45%", // 990px ya usse kam ke liye chhota size
-              },
-              "@media (max-width:550px)": {
-                top: "55%", // 990px ya usse kam ke liye chhota size
-              },
-              "@media (max-width:300px)": {
-                top: "50%", // 990px ya usse kam ke liye chhota size
-              },
-            }}
+          {/* TIME DATA */}
+          {/* <CardContent
+            className="timeData_mainBox  
+             bg-white 
+             "
           >
-            {["00", "00", "00"].map((value, index) => (
-              <Typography
-                key={index}
-                gutterBottom
-                variant="h5"
-                component="div"
-                className="tracking-wide"
-              >
-                <h6 className="text-sm flex flex-col items-center">
-                  <span>{value}</span> day
-                </h6>
-              </Typography>
-            ))}
-          </CardContent>
+            <div className="timeData_time flex gap-1 sm:gap-2">
+              {["00", "00", "00"].map((value, index) => (
+                <Typography
+                  key={index}
+                  gutterBottom
+                  variant="div"
+                  component="div"
+                  className="tracking-wide"
+                >
+                  <h6 className="timeData_para text-xs md:text-sm flex flex-col items-center">
+                    <span>{value}</span> day
+                  </h6>
+                </Typography>
+              ))}
+            </div>
+          </CardContent> */}
         </CardActionArea>
       </Card>
     </div>

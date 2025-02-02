@@ -14,6 +14,7 @@ body {
   width: 100vw;
   height: auto;
   overflow-y: scroll;
+  overflow-x: hidden;
   position: relative;
 }
 
@@ -38,12 +39,6 @@ body {
   font-size: 14px;
 }
 
-@media (max-width: 650px) {
-  .custom-top-margin {
-    margin-top: 60% !important;
-  }
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -58,3 +53,40 @@ body {
 .show {
   animation: fadeIn 3s ease-in-out forwards;
 }
+
+.timeData_mainBox {
+  border: 4px solid red;
+  position: absolute;
+  top: 40%;
+  left: 1/2;
+  border-radius: 50px;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 300px) {
+  .timeData_mainBox {
+    top: 40%;
+  }
+}
+
+ @media only screen and (min-width: 350px) {
+  .timeData_mainBox {
+    top:47%;
+  }
+}
+/*
+@media only screen and (max-width: 500px) {
+  .timeData_mainBox {
+    top: 48%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .timeData_mainBox {
+    top: 60%;
+  }
+} */

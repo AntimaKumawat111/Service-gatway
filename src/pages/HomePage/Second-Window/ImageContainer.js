@@ -1,22 +1,20 @@
 import React from "react";
 import Slider from "react-slick";
 
-// import "../App.css";
-
 // local modules
 import MovingCards from "./movingCard";
 
 function ActiveModeSlider() {
   var settings = {
     dots: false,
-    infinite: true, // इसे true करें
+    infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
     initialSlide: 0,
-    arrow: true,
+    arrow: false,
     autoplay: true,
-    autoplaySpeed: 2000, // स्लाइड कितने सेकंड बाद मूव होगी
+    autoplaySpeed: 2000,
 
     responsive: [
       {
@@ -24,7 +22,7 @@ function ActiveModeSlider() {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
-          infinite: true, // इसे भी true करें
+          infinite: true,
           dots: false,
         },
       },
@@ -47,9 +45,9 @@ function ActiveModeSlider() {
   };
 
   return (
-    <div className="first-box w-[90vw] m-auto ">
+    <div className="h-auto">
       <Slider {...settings}>
-        <div className="card h-auto ">
+        <div className="h-auto">
           {/* <h3>1</h3> */}
           <MovingCards
             url={
@@ -58,7 +56,7 @@ function ActiveModeSlider() {
             name={"MasterPiece Masterplace Art Auction Extra"}
           />
         </div>
-        <div className="card h-auto">
+        <div className="h-auto">
           {/* <h3>1</h3> */}
           <MovingCards
             url={
@@ -68,7 +66,7 @@ function ActiveModeSlider() {
           />
         </div>
 
-        <div className="card h-auto">
+        <div className="h-auto">
           {/* <h3>1</h3> */}
           <MovingCards
             url={
@@ -77,7 +75,7 @@ function ActiveModeSlider() {
             name={"MasterPiece Masterplace Art Auction Extra"}
           />
         </div>
-        <div className="card h-auto ">
+        <div className="h-auto">
           {/* <h3>1</h3> */}
           <MovingCards
             url={
@@ -86,7 +84,7 @@ function ActiveModeSlider() {
             name={"MasterPiece Masterplace Art Auction Extra"}
           />
         </div>
-        <div className="card h-auto ">
+        <div className=" h-auto">
           {/* <h3>1</h3> */}
           <MovingCards
             url={
@@ -95,7 +93,7 @@ function ActiveModeSlider() {
             name={"MasterPiece Masterplace Art Auction Extra"}
           />
         </div>
-        <div className="card h-auto ">
+        <div className=" h-auto">
           {/* <h3>1</h3> */}
           <MovingCards
             url={
@@ -105,7 +103,7 @@ function ActiveModeSlider() {
           />
         </div>
 
-        <div className="card h-auto ">
+        <div className="h-auto">
           {/* <h3>1</h3> */}
           <MovingCards
             url={
@@ -114,7 +112,7 @@ function ActiveModeSlider() {
             name={"MasterPiece Masterplace Art Auction Extra"}
           />
         </div>
-        <div className="card h-auto ">
+        <div className="h-auto">
           {/* <h3>1</h3> */}
           <MovingCards
             url={
@@ -123,7 +121,7 @@ function ActiveModeSlider() {
             name={"MasterPiece Masterplace Art Auction Extra"}
           />
         </div>
-        <div className="card h-auto">
+        <div className="h-auto">
           {/* <h3>1</h3> */}
           <MovingCards
             url={

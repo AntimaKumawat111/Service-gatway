@@ -9,7 +9,7 @@ const courses = [
   },
 ];
 
-const ServiceSection = () => {
+const Courses = () => {
   return (
     <>
       <section className=" w-80 mb-7 m-4 shadow-xl rounded-lg ">
@@ -39,4 +39,4 @@ const ServiceSection = () => {
   );
 };
 
-export default ServiceSection;
+export default Courses;

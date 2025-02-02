@@ -3,11 +3,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import AddIcon from "@mui/icons-material/Add";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
-import CloseIcon from '@mui/icons-material/Close';
-// import { Link } from "react-router-dom"; // Import Link for navigation
 
-// import InputCheckforMenu from "./Input_Box_for_menu";
-import InputBoxforMenu from "./InputBoxForMenu";
+import InputCheckforMenu from "./Input_Box_for_menu";
 
 export default function MenuBtnPage() {
   const [isOpen, setIsOpen] = useState(false);
@@ -72,12 +69,9 @@ export default function MenuBtnPage() {
                 animate={{ y: 0, opacity: 1 }} // Final position
                 exit={{ y: "-100vh", opacity: 0 }} // Exit animation
                 transition={{ duration: 0.6, ease: "easeOut" }} // Animation speed
-                className="fixed top-0 left-0 h-full bg-blue-500 text-white transition-transform duration-2000"
+                className="fixed top-0 left-0 h-full bg-blue-500 text-white transition-transform duration-500"
                 style={{ width: "300px" }}
               >
-                  <CloseIcon className="text-black absolute right-3 top-2 "
-                   onClick={() => setIsOpen(false)}
-                  />
                 <div className="bg-gray-300 min-h-[100vh] flex flex-col items-center p-4 ">
                   <div className="flex items-center space-x-3 mb-6">
                     <img
@@ -87,7 +81,7 @@ export default function MenuBtnPage() {
                   </div>
 
                   {/* List with Anchor Tags */}
-                  <ul className="space-y-4 mt-2 w-full">
+                  <ul className="space-y-5 mt-5 w-full">
                     <li className="flex justify-between">
                       <a
                         href="https://probid-nextjs.vercel.app/"
@@ -149,7 +143,7 @@ export default function MenuBtnPage() {
                     </div>
 
                     <div className="flex gap-9">
-                      <InputBoxforMenu />
+                      <InputCheckforMenu />
                     </div>
                   </ul>
                 </div>

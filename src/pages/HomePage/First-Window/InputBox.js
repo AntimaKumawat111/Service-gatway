@@ -10,7 +10,7 @@ const onSearch = (value, _e, info) => console.log(info?.source, value);
 const InputBox = () => (
   <Space
     direction="vertical"
-    className="gap-4 flex flex-col md:flex-row items-center justify-between w-full md:w-auto flex-wrap"
+    className="gap-2 flex flex-col lg:flex-row items-center md:justify-end xl:justify-between w-full md:w-auto flex-wrap"
   >
     <Search
       placeholder="Search Your product..."

@@ -124,7 +124,7 @@ function HorizontalCard({ url, name }) {
               </div>
 
               {/* Buy Now Button */}
-              <div className="rounded-lg px-2 py-1 bg-blue-500 hover:bg-green-500 text-white cursor-pointer">
+              <div className="rounded-lg px-2 py-1 bg-blue-500 hover:bg-blue-700 text-white cursor-pointer">
                 Buy Now
               </div>
             </div>

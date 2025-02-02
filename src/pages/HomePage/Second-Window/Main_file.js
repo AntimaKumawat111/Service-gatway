@@ -6,7 +6,7 @@ import ActiveModeSlider from "./ImageContainer";
 
 function MainFrom2ndWindow() {
   return (
-    <div className="border-4 border-green-900 relative bg-white w-[100vw] min-h-[90vh] flex flex-col justify-between rounded-t-3xl lg:border-4 custom-top-margin">
+    <div className="relative bg-white w-[100vw] min-h-[70vh] flex flex-col justify-evenly rounded-t-3xl overflow-x-hidden">
       {/* TopBar animation */}
       <motion.div
         className="w-full"
@@ -29,7 +29,7 @@ function MainFrom2ndWindow() {
 
       {/* Button animation */}
       <motion.button
-        className="mx-auto mt-5 mb-10 px-6 py-3 underline font-semibold flex items-center gap-2 hover:text-blue-900 transition"
+        className="mx-auto mt-5 mb-10 px-6 py-2 underline font-semibold flex items-center gap-2 hover:text-blue-900 transition"
         onClick={() =>
           (window.location.href =
             "https://probid-nextjs.vercel.app/auction-grid")

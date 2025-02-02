@@ -6,35 +6,35 @@ import HorizontalCard from "./Horizontal_Card";
 
 function ActiveCards() {
   return (
-    <div className="h-auto w-full ">
+    <div className=" h-auto w-full  ">
       {/* for smaller screen size of 900px */}
       <div>
         {/* vartical box */}
-        <div className="vartical_card card h-auto sm:flex sm:flex-wrap align-middle">
+        <div className=" vartical_card card h-auto flex flex-wrap justify-between">
           <VaricalCard
-            url="https://probid-nextjs.vercel.app/assets/img/home5/category-img1.png"
+            url="https://probid-nextjs.vercel.app/assets/img/home5/auction-img5.jpg"
             name="MasterPiece Masterplace Art Auction Extra"
             price="150.00"
           />
           <VaricalCard
-            url="https://probid-nextjs.vercel.app/assets/img/home5/category-img1.png"
+            url="https://probid-nextjs.vercel.app/assets/img/home5/auction-img2.jpg"
             name="MasterPiece Masterplace Art Auction Extra"
             price="200.00"
           />
           <VaricalCard
-            url="https://probid-nextjs.vercel.app/assets/img/home5/category-img1.png"
+            url="https://probid-nextjs.vercel.app/assets/img/home5/auction-img3.jpg"
             name="MasterPiece Masterplace Art Auction Extra"
             price="175.50"
           />
           <VaricalCard
-            url="https://probid-nextjs.vercel.app/assets/img/home5/category-img1.png"
+            url="https://probid-nextjs.vercel.app/assets/img/home5/auction-img6.jpg"
             name="MasterPiece Masterplace Art Auction Extra"
             price="300.00"
           />
         </div>
 
         {/* horizontal box */}
-        <div className="horizontal flex flex-col flex-wrap">
+        <div className="hidden horizontal flex flex-col flex-wrap">
           <HorizontalCard
             url="https://probid-nextjs.vercel.app/assets/img/home5/auction-img7.jpg"
             name="MasterPiece Masterplace Art Auction Extra"
