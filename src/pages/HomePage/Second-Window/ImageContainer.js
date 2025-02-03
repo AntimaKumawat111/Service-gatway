@@ -48,7 +48,6 @@ function ActiveModeSlider() {
     <div className="h-auto">
       <Slider {...settings}>
         <div className="h-auto">
-          {/* <h3>1</h3> */}
           <MovingCards
             url={
               "https://probid-nextjs.vercel.app/assets/img/home5/category-img1.png"
@@ -57,7 +56,6 @@ function ActiveModeSlider() {
           />
         </div>
         <div className="h-auto">
-          {/* <h3>1</h3> */}
           <MovingCards
             url={
               "https://probid-nextjs.vercel.app/assets/img/home5/category-img2.png"
@@ -67,7 +65,6 @@ function ActiveModeSlider() {
         </div>
 
         <div className="h-auto">
-          {/* <h3>1</h3> */}
           <MovingCards
             url={
               "https://probid-nextjs.vercel.app/assets/img/home5/category-img3.png"
@@ -76,7 +73,6 @@ function ActiveModeSlider() {
           />
         </div>
         <div className="h-auto">
-          {/* <h3>1</h3> */}
           <MovingCards
             url={
               "https://probid-nextjs.vercel.app/assets/img/home5/auction-img4.jpg"
@@ -85,7 +81,6 @@ function ActiveModeSlider() {
           />
         </div>
         <div className=" h-auto">
-          {/* <h3>1</h3> */}
           <MovingCards
             url={
               "https://probid-nextjs.vercel.app/assets/img/home5/category-img5.png"
@@ -94,7 +89,6 @@ function ActiveModeSlider() {
           />
         </div>
         <div className=" h-auto">
-          {/* <h3>1</h3> */}
           <MovingCards
             url={
               "https://probid-nextjs.vercel.app/assets/img/home5/category-img6.png"
@@ -104,7 +98,6 @@ function ActiveModeSlider() {
         </div>
 
         <div className="h-auto">
-          {/* <h3>1</h3> */}
           <MovingCards
             url={
               "https://probid-nextjs.vercel.app/assets/img/home5/category-img7.png"
@@ -113,7 +106,6 @@ function ActiveModeSlider() {
           />
         </div>
         <div className="h-auto">
-          {/* <h3>1</h3> */}
           <MovingCards
             url={
               "https://probid-nextjs.vercel.app/assets/img/home5/category-img8.png"
@@ -122,7 +114,6 @@ function ActiveModeSlider() {
           />
         </div>
         <div className="h-auto">
-          {/* <h3>1</h3> */}
           <MovingCards
             url={
               "https://probid-nextjs.vercel.app/assets/img/home5/category-img9.png"

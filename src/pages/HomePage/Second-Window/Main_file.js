@@ -6,7 +6,7 @@ import ActiveModeSlider from "./ImageContainer";
 
 function MainFrom2ndWindow() {
   return (
-    <div className="relative bg-white w-[100vw] min-h-[70vh] flex flex-col justify-evenly rounded-t-3xl overflow-x-hidden">
+    <div className="relative bg-white flex flex-col justify-evenly rounded-t-3xl overflow-x-hidden">
       {/* TopBar animation */}
       <motion.div
         className="w-full"
@@ -22,7 +22,7 @@ function MainFrom2ndWindow() {
         className="w-full"
         initial={{ opacity: 0, y: "100%" }} // Initial position off-screen to the left
         whileInView={{ opacity: 1, y: 0 }} // When in view, move to original position
-        transition={{ duration: 1.5, ease: "easeOut" }}
+        transition={{ duration: 1, ease: "easeOut" }}
       >
         <ActiveModeSlider />
       </motion.div>

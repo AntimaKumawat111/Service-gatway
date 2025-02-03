@@ -21,10 +21,10 @@ function TopBar() {
 
   return (
     <>
-      <div className="fade-in w-full  flex flex-col p-10 mt-10 gap-5 xl:flex-row  xl:items-center   md:gap-4 lg:p-24 lg:gap-4  lg:mt-0 ">
+      <div className=" mb-2 sm:mb-8 fade-in w-full flex flex-col p-5 mt-1 gap-5 xl:flex-row  xl:items-center md:gap-4 lg:p-9 lg:gap-4 lg:mt-0 ">
         <div className="  sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-1/3 ">
           <p className="uppercase text-blue-700">bidding our</p>
-          <h2 className="text-4xl font-bold tracking-wide flex gap-2 ">
+          <h2 className="text-4xl font-bold tracking-wide flex flex-col sm:flex-row gap-2 ">
             Auction <i className="opacity-70 font-semibold">Spotlight</i>
           </h2>
         </div>

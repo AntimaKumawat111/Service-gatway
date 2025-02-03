@@ -22,8 +22,6 @@ function MovingCards({ url, name }) {
           "@media (max-width:550px)": {
                 maxWidth:450,
                 minHeight:150,
-                // padding: "0",
-                // paddingTop: "1rem",
               },
         }}
       >

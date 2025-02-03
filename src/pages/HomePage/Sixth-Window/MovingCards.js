@@ -20,7 +20,8 @@ function MovingCards({ name, paragraph, firstValue, secondValue,step }) {
           // Corrected media query syntax
           "@media (max-width: 600px)": {
             padding: "5px",
-            maxWidth: "100%",
+            maxWidth: "90%",
+            margin:'auto',
           },
         }}
       >

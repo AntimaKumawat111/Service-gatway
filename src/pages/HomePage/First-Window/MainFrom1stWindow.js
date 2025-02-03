@@ -9,7 +9,7 @@ import MiddleData from "./MiddleData";
 
 function Mainfrom1stWindow() {
   return (
-    <div className="relative w-full h-full overflow-x-hidden overflow-y-scroll">
+    <div className="relative w-full h-full sm:h-[90vh] overflow-hidden">
       <Fade />
       <div className="absolute top-0 w-full bg-transparent p-4">
         <NavigationBar />

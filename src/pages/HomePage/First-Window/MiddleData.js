@@ -23,7 +23,7 @@ function MiddleData() {
       initial={{ opacity: 0, y: 100 }} // Start from bottom
       animate={{ opacity: 1, y: 0 }} // Move to normal position
       transition={{ duration: 1, ease: "easeOut" }} // Smooth effect
-      className="border border-red-900 w-full h-auto mt-24 flex flex-col text-white lg:flex-row"
+      className="w-full h-auto mt-24 flex flex-col text-white lg:flex-row"
       style={{ marginTop: "4rem" }}
     >
       {/* Social Apps */}

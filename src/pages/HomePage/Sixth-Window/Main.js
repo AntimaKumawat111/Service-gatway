@@ -49,6 +49,7 @@ function MainFrom6thWindow() {
   }, []);
 
   const settings = {
+    arrows:false,
     dots: false,
     infinite: false,
     slidesToShow: 3,
