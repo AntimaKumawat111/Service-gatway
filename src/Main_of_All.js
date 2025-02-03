@@ -8,6 +8,9 @@ import Mainfrom4thwindow from "./pages/HomePage/Fourth-Window/Main";
 import Mainfrom5thWindow from "./pages/HomePage/Fifthh-Window/Mainfrom5theWindow";
 import MainFrom6thWindow from "./pages/HomePage/Sixth-Window/Main";
 import MainFrom7thWindow from "./pages/HomePage/Seventh-Window/MainFrom7thWindow";
+import MainFrom8thWindow from "./pages/HomePage/Eighth-Window/Main_file";
+import MainFrom9thWindow from "./pages/HomePage/Ninths-Window/MainFrom9thWindow";
+
 function MainOfAll() {
   return (
     <>
@@ -19,6 +22,8 @@ function MainOfAll() {
         <Mainfrom5thWindow />
         <MainFrom6thWindow />
         <MainFrom7thWindow/>
+        <MainFrom8thWindow/>
+        <MainFrom9thWindow/>
       </div>
     </>
   );
