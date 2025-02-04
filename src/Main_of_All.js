@@ -19,7 +19,7 @@ import MainFrom14thWindow from "./pages/HomePage/Fourteenth-Window/MainFrom14thW
 function MainOfAll() {
   return (
     <>
-      <div className="border-4 border-yellow-600 m-auto  ">
+      <div className="m-auto">
         <Mainfrom1stWindow />
         <MainFrom2ndWindow />
         <MainFrom3rdWindow />
