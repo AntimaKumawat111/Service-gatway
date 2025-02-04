@@ -12,6 +12,9 @@ import MainFrom8thWindow from "./pages/HomePage/Eighth-Window/Main_file";
 import MainFrom9thWindow from "./pages/HomePage/Ninths-Window/MainFrom9thWindow";
 import MainFrom10thWindow from "./pages/HomePage/Tenth-Window/MainFrom10thWindow";
 import MainFrom11thWindow from "./pages/HomePage/Eleventh-Window/MainFrom11thWindow";
+import MainFrom12thWindow from "./pages/HomePage/Twelth-Window/MainFrom12thWindow";
+import MainFrom13thWindow from "./pages/HomePage/Thirteen-Window/MainFrom13thWindow";
+import MainFrom14thWindow from "./pages/HomePage/Fourteenth-Window/MainFrom14thWindow";
 
 function MainOfAll() {
   return (
@@ -27,7 +30,10 @@ function MainOfAll() {
         <MainFrom8thWindow />
         <MainFrom9thWindow />
         <MainFrom10thWindow />
-        <MainFrom11thWindow/>
+        <MainFrom11thWindow />
+        <MainFrom12thWindow />
+        <MainFrom13thWindow />
+        <MainFrom14thWindow />
       </div>
     </>
   );
